@@ -1,8 +1,18 @@
 function threeSum(arr, target) {
 // write your code here
 	for (let i = 0; i < arr.length; i++) {
-		if(arr[i]===target){
+		if(i>1){
+			if(arr[i]===target){
 			return arr[i]+arr[i-1]+arr[i-2];
+			}
+		}else if(i==1){
+			if(arr[i]===target){
+			return arr[i]+arr[i-1]+arr[i+1];
+		}
+		}else if(i==0){
+			if(arr[i]===target){
+			return arr[i]+arr[i+1]+arr[i+2];
+		}
 		}
 	}
   
