@@ -1,5 +1,6 @@
 function threeSum(arr, target) {
 // write your code here
+	arr.sort((a,b)=> a-b);
 	for (let i = 0; i < arr.length; i++) {
 		if(i>1){
 			if(arr[i]===target){
